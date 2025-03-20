@@ -92,5 +92,6 @@ def text_to_textnodes(text):
     codes = split_nodes_delimiter([TextNode(text, TextType.TEXT)], '`', TextType.CODE)
     bold = split_nodes_delimiter(codes, '**', TextType.BOLD)
     italic = split_nodes_delimiter(bold, '_', TextType.ITALIC)
+    start_italic = split_nodes_delimiter(italic, "*", TextType.ITALIC)
 
-    return split_nodes_image(split_nodes_link(italic))
+    return split_nodes_image(split_nodes_link(start_italic))
