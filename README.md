@@ -4,17 +4,17 @@
 
 ## How to run the project
 
-to start the project
+To start the project
 ```shell
 ./main.sh
 ```
 
-if you are using a unix based operating system run this command first
+If you are using a unix based operating system run this command first
 ```linux
 chmod +x ./main.sh
 ```
 
-The generator only convert *markdown* file which are located in the `/content` folder.
-Other file extension are ignored altogether.
+The generator only convert *markdown* files which are located in the `/content` folder.
+Other file extensions are ignored altogether.
 
-Image resources which will are used in the `markdown` file should be included in the `/static` folder.
+Image resources which are used in the `markdown` files should be included in the `/static` folder.
