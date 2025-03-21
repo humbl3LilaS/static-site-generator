@@ -42,7 +42,7 @@ def text_node_to_html_node(text_node: TextNode):
             props = {
                 "href": text_node.url
             }
-            return LeafNode("a", "", props)
+            return LeafNode("a", text_node.text, props)
         case TextType.IMAGE:
             props = {
                 "src": text_node.url,
@@ -51,3 +51,4 @@ def text_node_to_html_node(text_node: TextNode):
             return LeafNode("img", "", props)
         case _:
             raise Exception("Invalid Text Node Type")
+
